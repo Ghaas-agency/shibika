@@ -1,0 +1,16 @@
+nav {
+  background-color: #080808;
+  padding: 10px 50px;
+  align-items: center;
+
+  a {
+    color: #ffffff;
+    margin: 0;
+    transition: $transition;
+
+    &:hover,
+    &:focus {
+      opacity: 0.9;
+    }
+  }
+}

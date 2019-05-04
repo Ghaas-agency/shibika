@@ -1,0 +1,1 @@
+node-sass --output-style compressed -w assets/scss/style.scss assets/css/style.css

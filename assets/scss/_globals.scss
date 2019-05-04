@@ -1,0 +1,69 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  font-family: 'Inter UI', sans-serif;
+  font-size: 15px;
+  line-height: 1.625;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $darkgrey;
+  background-color: #ffffff;
+  -webkit-text-size-adjust: auto;
+  -moz-text-size-adjust: auto;
+  -ms-text-size-adjust: auto;
+  text-size-adjust: auto;
+}
+
+p {
+  margin: 30px 0 20px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
+  margin: 0;
+}
+
+h1,
+.h1 {
+  font-size: 3.25rem;
+  line-height: 1.2;
+}
+
+h2,
+.h2 {
+  font-size: 2.15rem;
+  line-height: 1.2;
+  color: $black;
+}
+
+a {
+  color: $red;
+  text-decoration: none;
+}
+
+input,
+select,
+textarea {
+  display: inline-block;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}

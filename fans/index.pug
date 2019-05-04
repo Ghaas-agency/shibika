@@ -1,0 +1,65 @@
+include ../components/_mixins.pug
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Join as a Fan | Shibika
+    link(rel="stylesheet", href="https://rsms.me/inter/inter.css")
+    link(rel="stylesheet", href="/assets/css/style.css")
+  body
+    +nav
+    section.index-hero(style="background-image: url('/assets/img/fans-bg.jpg');")
+      .container
+        h1.white Your Gateway
+          br
+          | To The World
+          br
+          | Of Art
+        p.white Different Art-Forms. Different Artists.
+          br
+          | One Platform To Reach Them All.
+        a.button(href="#!") Join as an fan
+    section.index-features
+      .container
+        .row
+          .col
+            img(src="/assets/img/fans-one.jpg", alt="")
+          .col
+            h2 Discover Events Around You
+            p Don’t be stuck with the usual movie and drinks plan on weekends. 
+              | With Shibika, you can explore events around you which you’d normally 
+              | miss out. Pottery classes, amateur music nights, theatre events, 
+              | exhibitions - you’ll find them all on Shibika.
+            a.button(href="#!") Join as an artist
+        .row
+          .col
+            h2 Engage With Your Local Artistic Community
+            p Explore art beyond the popular and trendy. Find artists around you, 
+              | discover hidden talents and engage with your local artist community. 
+              | Shibika brings you closer to the artistic community you’d love to 
+              | interact with.
+            a.button(href="#!") Join as an fan
+          .col
+            img(src="/assets/img/fans-two.jpg", alt="")
+        .row
+          .col
+            img(src="/assets/img/fans-three.jpg", alt="")
+          .col
+            h2 Promote And Appreciate Art That You Love
+            p Find artists you like on Shibika and explore their journey with them 
+              | and be a part of their journey. Follow them, cheer them on by 
+              | interacting with their work and promote them amongst your friends.
+            a.button(href="#!") Join as an fan
+        .row
+          .col
+            h2 Book Artists For Your Own Event
+            p Whether you are looking for a classical singer for a Ghazal night on 
+              | your 25th Anniversary or a professional dance group for your Sangeet, 
+              | find artists on Shibika and connect with them to book them for your 
+              | own events.
+            a.button(href="#!") Join as an fan
+          .col
+            img(src="/assets/img/fans-four.jpg", alt="")
+    +footer
