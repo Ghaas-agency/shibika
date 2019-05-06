@@ -17,6 +17,13 @@
       font-size: 1.3rem;
       margin-bottom: 90px;
     }
+
+    @media only screen and (max-width: 767px) {
+      background-position: 90% bottom;
+      background-size: cover;
+      background-color: rgba($color: #000000, $alpha: 0.8);
+      background-blend-mode: overlay;
+    }
   }
 
   &-features {
@@ -80,6 +87,20 @@
           }
         }
       }
+    }
+  }
+}
+
+.fans {
+  .index-hero {
+    background-image: url('../img/fans-bg.jpg');
+
+    @media only screen and (max-width: 979px) {
+      background-position: 25% center;
+    }
+
+    @media only screen and (max-width: 767px) {
+      background-color: rgba($color: #000000, $alpha: 0.65);
     }
   }
 }
