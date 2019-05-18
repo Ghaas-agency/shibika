@@ -8,6 +8,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media only screen and (max-width: 767px) {
+      text-align: center;
+    }
+
     h1 {
       margin-bottom: 15px;
     }
@@ -27,6 +31,18 @@
   }
 
   &-features {
+    background: url('../img/bottom.png') bottom no-repeat, url('../img/middle.png') center 410px no-repeat;
+    background-size: contain;
+    
+    @media only screen and (max-width: 979px) {
+      background: url('../img/bottom.png') bottom no-repeat, url('../img/middle.png') center 40% no-repeat;
+      background-size: 200%;
+    }
+
+    @media only screen and (max-width: 767px) {
+      text-align: center;
+    }
+
     a.button {
       background-color: $darkgrey;
     }
