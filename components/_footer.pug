@@ -1,7 +1,8 @@
-mixin footer
-  .footer-section.center
-    .container
-      p Where Art Meets Art Lovers
+mixin footer(hideSection)
+  unless(hideSection)
+    .footer-section.center
+      .container
+        p Where Art Meets Art Lovers
   footer.center
     .container
       ul.list-unstyled.list-inline

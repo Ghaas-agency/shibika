@@ -122,3 +122,10 @@ ul.list-inline {
     opacity: 0.9;
   }
 }
+
+.separator {
+  .container {
+    border-bottom: 1px solid $darkgrey;
+    opacity: 0.5;
+  }
+}

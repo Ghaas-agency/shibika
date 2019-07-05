@@ -1,0 +1,97 @@
+include ../components/_mixins.pug
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Saurabh Turakhia | Artist Spotlight | Shibika
+    
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-89861918-3')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-89861918-3');
+
+    link(rel="icon", type="image/png", href="../assets/img/shibika-icon.png")
+    link(rel="stylesheet", href="https://rsms.me/inter/inter.css")
+    link(rel="stylesheet", href="../assets/css/style.css")
+  body
+    +nav
+
+    section.spotlight-hero
+      .container
+        h1.uppercase Saurabh Turakhia
+        p Portrait Artist And Writer
+
+    .separator
+      .container
+
+    section.spotlight-about
+      .container
+        .row
+          .col
+            h2.uppercase About Saurabh
+            p Saurabh is one of the most enthusiastic and zealous artists we have come across at Shibhika. What makes Saurabh stand out is his passion. He is passionate about art, Bollywood and writing. And he strives to grow into these art forms with time. He weaves stories- sometimes through his pen and sometimes through his brush. The results may not always be perfect, but they always reflect his passion.
+          .col.right
+            img(src="../assets/img/saurabh-turakhia-art.png", alt="saurabh turakhia art")
+
+    .separator
+      .container
+
+    section.spotlight-conversation
+      .container
+        h2.uppercase In Conversation with Saurabh Turakhia
+        .row
+          .col
+            h3 When and how did your artistic journey start?
+            p The journey started as a child, though the inclination was far less intense back then. However, it was to pull me into the world of art. Around 2008, while going through a low phase in my life, the passion for art resurfaced strongly. I had a lot of time on my hands and was trying to work out a way to deal with my anxiety and maintain my sanity. So, I consciously decided to pick up the pencil and started sketching actively. And it all started then. It has been over a decade now and over the years, I have dabbled with other art forms too. Now I paint, I write and I sketch.
+          .col.center
+            img(src="../assets/img/saurabh-turakhia-art-1.png", alt="art by saurabh turakhia")
+        .row
+          .col.center
+            img(src="../assets/img/saurabh-turakhia-art-2.png", alt="art by saurabh turakhia")
+          .col
+            h3 What inspired you to take up a particular art form?
+            p Being a Bollywood buff, portraits were a natural choice. Also, references for them were easily available through magazines from old paper marts. Getting the resemblances right, gave me a kick. I can often see myself as the much dramatised Bollywood screen underdog.
+        .row
+          .col
+            h3 Share at least one setback/challenge you faced during the journey.
+            p Initially, the work I created felt below average. My portraits had less resemblance with the stars and their fans would give me negative feedback. But all the criticism just made me want to try to get it right. It was only through practice that I could progress as an artist so I kept trying until I got the desired result. I would say am still learning and haven’t reached perfection. Nonetheless, I am growing. Also, another challenge I still face is that while people like my portraits of Bollywood celebs, they keep on nudging me to move to public figures beyond Bollywood. Not to disappoint my fans, I did make portraits of personalities such as Nelson Mandela, Sir A P J Abdul Kalam.
+          .col.center
+            img(src="../assets/img/saurabh-turakhia-art-3.png", alt="art by saurabh turakhia")
+        .row
+          .col.center
+            img(src="../assets/img/saurabh-turakhia-art-4.png", alt="art by saurabh turakhia")
+          .col
+            h3 Do you have a role model or an artist who you look up to or someone who inspires you?
+            p There is no role model in particular but I would like to acknowledge contributions from Mrs Soparkar, a very talented teacher who exposed us to art in a very nice way. I also am inspired by my aunt, Mrs Rajul Dodhiwala who is a talented artist too. I also learnt many things related to art from Vivek Thakkar. From a broader perspective, I am always inspired by works of R.K. Laxman and Mario Miranda. And of course, Van Gogh’s journey always remains inspirational for me.
+        .row
+          .col
+            h3 When not performing or practising your art, what is the one thing you love to do?
+            p When not performing or practising art, I like to read about artists and the art world. I like to network with people connected to art. I like to think of collaborations where my artworks can be used.
+          .col.center
+            img(src="../assets/img/saurabh-turakhia-art-5.png", alt="art by saurabh turakhia")
+
+    .separator
+      .container
+
+    section.spotlight-work.center
+      .container
+        h2.uppercase Saurabh's works
+        .row
+          a(href="http://www.alwaysopenpen.blogspot.com", target="_blank", rel="noopener noreferrer").col
+            span.bold Short Stories Blog
+          a(href="http://www.heartatart.blogspot.com", target="_blank", rel="noopener noreferrer").col
+            span.bold Art Blog
+
+    .separator
+      .container
+
+    section.spotlight-cta.center
+      .container
+        p.bold Are you an artist too? Let us help you get your own Artist page.
+        a.button(href="https://www.shibika.com/register", target="_blank", rel="noopener noreferrer") Join Shibika
+
+    +footer(true)
