@@ -1,0 +1,212 @@
+.spotag {
+  section {
+    padding: 100px 0;
+
+    &.dark {
+      background-color: $black;
+
+      * {
+        color: $f;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 3.5em;
+    line-height: 0.9;
+    font-weight: 800;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 2.5em;
+    }
+  }
+
+  h3 {
+    color: $black;
+    line-height: 1.4;
+    font-size: 1.4em;
+  }
+
+  p {
+    line-height: 1.8;
+    margin-top: 15px;
+  }
+
+  .row {
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .col.right,
+    .col.left {
+      text-align: center;
+    }
+  }
+
+  .spotag &-hero {
+    padding: 0;
+    overflow: hidden;
+
+    p {
+      margin-top: 10px;
+      font-size: 1.3em;
+    }
+
+    img {
+      transform: scale(1.1);
+      transform-origin: left;
+    }
+
+    @media only screen and (max-width: 767px) {
+      padding-top: 30px;
+      text-align: center;
+
+      img {
+        transform: translate(40px, -50px);
+      }
+    }
+  }
+
+  .spotag &-about {
+    @media only screen and (max-width: 767px) {
+      padding-top: 0;
+    }
+
+    .row {
+      @media only screen and (max-width: 767px) {
+        flex-direction: column-reverse
+      }
+
+      &> .col {
+        &:first-child {
+          flex: 3;
+        }
+        
+        &:last-child {
+          flex: 2;
+          padding: 50px;
+
+          @media only screen and (max-width: 767px) {
+            padding: 0 0 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .spotag &-conversation {
+    padding-bottom: 70px;
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 75px;
+    }
+
+    img {
+      max-width: 400px;
+      width: 100%;
+      object-fit: contain;
+    }
+
+    @media only screen and (max-width: 767px) {
+      padding: 50px 0;
+
+      h2 {
+        margin-bottom: 50px;
+      }
+
+      img {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .spotag &-conv1 {
+    padding: 0;
+
+    img {
+      transform: translateY(-65px);
+      max-width: 450px;
+      width: 100%;
+      object-fit: contain;
+    }
+
+    @media only screen and (max-width: 767px) {
+      padding: 50px 0;
+
+      img {
+        padding-top: 30px;
+        transform: translateY(0);
+      }
+
+      .row {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+  .spotag &-conv2 {
+    padding: 0;
+
+    img {
+      transform: scale(1.1);
+      max-width: 330px;
+      width: 100%;
+      object-fit: contain;
+    }
+
+    @media only screen and (max-width: 767px) {
+      padding: 50px 0;
+
+      img {
+        transform: unset;
+        padding-top: 30px;
+      }
+    }
+  }
+
+  .spotag &-conv3 {
+    padding: 30px 0;
+
+    img {
+      transform: translateY(80px);
+      max-width: 400px;
+      width: 100%;
+      object-fit: contain;
+    }
+
+    @media only screen and (max-width: 767px) {
+      padding: 50px 0;
+
+      .row {
+        flex-direction: column-reverse;
+      }
+
+      img {
+        padding-top: 30px;
+        transform: translateY(0px);
+      }
+    }
+  }
+
+  .spotag &-conv4 {
+    padding: 0;
+
+    img {
+      max-width: 400px;
+      transform: translateY(-30px);
+      width: 100%;
+      object-fit: contain;
+    }
+
+    @media only screen and (max-width: 767px) {
+      padding: 50px 0;
+
+      img {
+        padding-top: 30px;
+        transform: translateY(0px);
+        max-height: 400px;
+      }
+    }
+  }
+}
