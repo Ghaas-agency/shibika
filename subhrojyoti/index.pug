@@ -1,0 +1,98 @@
+include ../components/_mixins.pug
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Subhrojyoti | Artist Spotlight | Shibika
+
+    meta(rel="description", content="Meet Subhrojyoti, a remarkable singer, lyricist and producer. Subhrojyoti writes, performs, manages and produces his own music which has also been featured Hungama’s Artist Aloud series.")
+    // Search Engine
+    meta(name='description', content='Meet Subhrojyoti, a remarkable singer, lyricist and producer. Subhrojyoti writes, performs, manages and produces his own music which has also been featured Hungama’s Artist Aloud series.')
+    //- meta(name='image', content='')
+    // Schema.org for Google
+    meta(itemprop='name', content='Subhrojyoti | Artist Spotlight | Shibika')
+    meta(itemprop='description', content='Meet Subhrojyoti, a remarkable singer, lyricist and producer. Subhrojyoti writes, performs, manages and produces his own music which has also been featured Hungama’s Artist Aloud series.')
+    //- meta(itemprop='image', content='')
+    // Twitter
+    meta(name='twitter:card', content='summary')
+    meta(name='twitter:title', content='Subhrojyoti | Artist Spotlight | Shibika')
+    meta(name='twitter:description', content='Meet Subhrojyoti, a remarkable singer, lyricist and producer. Subhrojyoti writes, performs, manages and produces his own music which has also been featured Hungama’s Artist Aloud series.')
+    //- meta(name='twitter:image:src', content='')
+    // Open Graph general (Facebook, Pinterest & Google+)
+    meta(property='og:title', content='Subhrojyoti | Artist Spotlight | Shibika')
+    meta(property='og:description', content='Meet Subhrojyoti, a remarkable singer, lyricist and producer. Subhrojyoti writes, performs, manages and produces his own music which has also been featured Hungama’s Artist Aloud series.')
+    //- meta(property='og:image', content='')
+    meta(property='og:url', content='https://www.shibika.com')
+    meta(property='og:site_name', content='Shibika')
+    meta(property='og:type', content='website')
+    
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-89861918-3')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-89861918-3');
+
+    link(rel="icon", type="image/png", href="../assets/img/shibika-icon.png")
+    link(rel="stylesheet", href="https://rsms.me/inter/inter.css")
+    link(rel="stylesheet", href="../assets/css/style.css")
+  body
+    +nav
+
+    main.spotsj
+
+      section.spotsj-hero.position-relative
+        .container
+          h1.blue.uppercase Subhro
+            span.space &nbsp;
+            | jyoti
+          p Singer, Lyricist and Producer
+          img(src="../assets/img/subhrojyoti-1.png", alt="subhrojyoti")
+          span.credits Photo Credits: Vikram Jyoti
+      
+      section.spotsj-about
+        .container
+          .row
+            .col.center
+              img(src="../assets/img/subhrojyoti-2.png", alt="subhrojyoti")
+            .col
+              h2.uppercase About Subhrojyoti
+              p Subhrojyoti is one of the most exceptional singers we’ve come across on our platform. With his works aired on ABC Radio, Radio Mirchi, Hungama and innumerable other online and offline platforms, Subhrojyoti’s journey is a lesson in itself. It tells us that the path to find one’s self is often travelled alone. As a solo artist, he has created some of the most outstanding melodies for you to enjoy.
+
+      section.spotsj-conversation
+        .container
+          h2.center.uppercase In Conversation with Subhrojyoti
+          .row
+            .col
+              h3 When did you start practising your art form?
+              p I started practising music when by fluke I got selected in the cultural and dramatics club at NIT Jamshedpur during my 1st year of engineering, way back in 1999.
+            .col.center
+              img(src="../assets/img/subhrojyoti-3.png", alt="subhrojyoti")
+          .row
+            .col.center
+              img(src="../assets/img/subhrojyoti-4.png", alt="subhrojyoti")
+            .col
+              h3 What inspired you to take up that particular art form?
+              p Right from my childhood days, I was an avid fan of music. I used to listen to country music, soft rock etc and shared my interest with friends in school and college at Guwahati. My dad, mom and elder brother, all were great singers. My brother recorded music alongside famous musicians of Assam. So obviously, the environment I grew up in, played a big role in serving the inspiration!
+          .row
+            .col
+              h3 Share one set back/challenge/hurdle you faced on your journey.
+              p When my brother and I were recording our first studio album, working on the project being located at Pune was challenging for me. My brother and the rest of the musicians were based out of Mumbai. Hence, I used to travel every weekend to Mumbai to make our music, which at times used to feel hectic. But it did pay off well. We were the winners of the Effigy Award by Fame Games of the ABC Radio Network in USA.
+              p Subsequently, we were featured in the Mid-Day news magazine, on Radio Mirchi and other platforms. I must also add that holding a responsible position in a different sector altogether and also working on music professionally can be challenging. However, the trick is to make both complement each other to provide a musician with the required zeal.
+            .col.center
+              img(src="../assets/img/subhrojyoti-5.png", alt="subhrojyoti")
+          .row
+            .col.center
+              img(src="../assets/img/subhrojyoti-6.png", alt="subhrojyoti")
+            .col
+              h3 When not performing or practising your art, what is one thing that you love to do?
+              p I just love spending time with my family, daughter, wife and parents at Pune. Occasionally, I visit my brother in Bangalore and friends as well. I also exercise daily by taking a one-hour walk. And subsequently, I indulge in delicious delicacies, to foster my love for food.
+
+    section.spotlight-cta.center(style="background-color: #292929;")
+      .container
+        p.white.bold Are you an artist too? Let us help you get your own Artist page.
+        a.button(href="https://www.shibika.com/register", target="_blank", rel="noopener noreferrer") Join Shibika
+
+    +footer(true)
