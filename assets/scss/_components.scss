@@ -110,6 +110,7 @@ ul.list-inline {
 
 .button {
   display: inline-block;
+  border: 2px solid $red;
   background-color: $red;
   padding: 13px 30px;
   border-radius: 50px;
@@ -120,10 +121,30 @@ ul.list-inline {
   font-weight: bold;
   opacity: 1;
   transition: $transition;
+  cursor: pointer;
 
   &:hover,
   &:focus {
     opacity: 0.9;
+  }
+
+  &-outline {
+    background-color: unset;
+    border: 2px solid $black;
+    color: $black;
+
+    &:not([disabled]) {
+      &:hover,
+      &:focus {
+        border: 2px solid $red;
+        background-color: $red;
+        color: #ffffff;
+      }
+    }
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
   }
 }
 
