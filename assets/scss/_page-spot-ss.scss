@@ -1,0 +1,91 @@
+.spot-ss {
+  max-width: 100vw;
+  overflow: hidden;
+
+  &-hero {
+    min-height: 500px;
+    padding: 100px 0;
+    background-image: url('../img/shalaka-sreeram/shalaka-sreeram-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media only screen and (max-width: 979px) {
+      background-position: left;
+    }
+
+    h1 {
+      margin-top: 150px;
+
+      svg {
+        width: 250px;
+      }
+    }
+
+    p {
+      line-height: 1.8;
+      margin-top: 10px;
+      font-size: 1.3em;
+    }
+
+    @media only screen and (max-width: 767px) {
+      background-image: url('../img/shalaka-sreeram/shalaka-sreeram-hero-mobile.jpg');
+      background-position: center top;
+      padding: 50px 0;
+      text-align: center;
+      
+      h1 {
+        margin-top: 0;
+        
+        svg {
+          max-width: 150px;
+        }
+      }
+    }
+    
+    @media only screen and (max-width: 480px) {
+      min-height: 450px;
+      padding-bottom: 75px;
+    }
+  }
+
+  &-about,
+  &-conversation {
+    padding: 100px 0;
+
+    p {
+      line-height: 1.8;
+      margin-top: 15px;
+      opacity: 0.7;
+    }
+
+    h3 {
+      color: $black;
+      line-height: 1.4;
+      font-size: 1.4em;
+    }
+
+    .row {
+      align-items: center;
+      padding: 50px 0;
+      margin: 0 -50px;
+
+      .col {
+        margin: 0 50px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        .col {
+          order: 1;
+        }
+        .col.center {
+          order: 2;
+        }
+      }
+    }
+  }
+
+  &-about {
+    padding: 50px 0 0 0;
+  }
+}
