@@ -1,0 +1,185 @@
+$yellow: #ffc514;
+
+.spot {
+  &-hero {
+    background-color: $b;
+    color: $f;
+    padding-top: 260px;
+    padding-bottom: 70px;
+    background-image: url('../img/spotlight/shibika-spotlight-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 1400px;
+    min-height: 450px;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    p {
+      color: $yellow;
+      margin-top: 400px;
+      font-size: 1.3em;
+      letter-spacing: 1px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      background-size: 950px;
+      padding-top: 100px;
+
+      p {
+        margin-top: 320px;
+      }
+    }
+  }
+
+  &-what {
+    padding: 70px 0;
+    background-color: $lightgrey;
+
+    p {
+      max-width: 800px;
+      margin: 20px auto 0;
+      font-size: 1.12em;
+    }
+  }
+
+  &-featured {
+    padding: 70px 0;
+
+    .row {
+      margin: 30px -5px;
+
+      & > .col {
+        margin: 5px;
+      }
+    }
+  }
+
+  &-how {
+    background-color: $b;
+    background-image: url('../img/spotlight/spotlight-how.jpg');
+    background-size: 1400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 70px 0;
+
+    * {
+      color: $f;
+    }
+
+    .row {
+      margin: 20px -10px -10px;
+
+      & > div {
+        position: relative;
+        margin: 10px 40px;
+        width: 170px;
+
+        &::after {
+          content: url('../img/spotlight/arrow.png');
+          position: absolute;
+          left: calc(100% + 15px);
+          top: 80px;
+        }
+
+        &:last-child::after {
+          content: unset;
+        }
+
+        span {
+          font-size: 0.9em;
+        }
+
+        @media only screen and (max-width: 767px) {
+          margin: 10px auto 70px;
+
+          &::after {
+            top: calc(100% + 35px);
+            left: 50%;
+            transform: translateX(-50%) rotate(90deg);
+          } 
+        }
+      }
+    }
+
+    &--icon {
+      background-color: rgba(255, 196, 20, 0.54);
+      padding: 20px;
+      margin: 20px;
+
+      img {
+        max-height: 80px;
+      }
+    }
+
+    &--all {
+      margin-top: 50px;
+      margin-bottom: 80px;
+
+      @media only screen and (max-width: 767px) {
+        margin: 10px 0;
+      }
+    }
+  }
+
+  &-pricing {
+    padding: 70px 0;
+
+    .row {
+      margin: 20px -10px 0;
+
+      .col {
+        margin: 30px 10px 0;
+        padding: 30px 20px;
+        padding-bottom: 0;
+        background-color: $f;
+        box-shadow: 0 5px 14px -2px rgba($b, 0.2);
+
+        &:last-child .cost {
+          background-color: #283041;
+        }
+
+        h3 {
+          font-size: 1.5em;
+        }
+
+        p {
+          max-width: 400px;
+          margin: 20px auto;
+          min-height: 135px;
+
+          @media only screen and (max-width: 979px) {
+            min-height: 175px;
+          }
+
+          @media only screen and (max-width: 767px) {
+            min-height: unset;
+          }
+        }
+
+        .cost {
+          background-color: $b;
+          padding: 20px;
+          margin: 0 -20px;
+          font-size: 2.2em;
+          font-style: italic;
+        }
+      }
+    }
+  }
+
+  &-contact {
+    padding: 70px 0;
+    background-color: $b;
+    background-image: url('../img/spotlight/spotlight-how.jpg');
+    background-size: 1400px;
+    background-repeat: no-repeat;
+    background-position: center -100px;
+
+    p {
+      max-width: 430px;
+      margin: 30px auto;
+    }
+  }
+}

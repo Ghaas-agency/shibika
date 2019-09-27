@@ -1,0 +1,122 @@
+include ../components/_mixins.pug
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Shibika Spotlight
+
+    meta(rel="description", content="")
+    // Search Engine
+    meta(name='description', content='')
+    meta(name='image', content='../assets/img/shalaka-sreeram/meta-shalaka.jpg')
+    // Schema.org for Google
+    meta(itemprop='name', content='Shibika Spotlight')
+    meta(itemprop='description', content='')
+    meta(itemprop='image', content='../assets/img/shalaka-sreeram/meta-shalaka.jpg')
+    // Twitter
+    meta(name='twitter:card', content='summary')
+    meta(name='twitter:title', content='Shibika Spotlight')
+    meta(name='twitter:description', content='')
+    meta(name='twitter:image:src', content='../assets/img/shalaka-sreeram/meta-shalaka.jpg')
+    // Open Graph general (Facebook, Pinterest & Google+)
+    meta(property='og:title', content='Shibika Spotlight')
+    meta(property='og:description', content='')
+    meta(property='og:image', content='../assets/img/shalaka-sreeram/meta-shalaka.jpg')
+    meta(property='og:url', content='https://www.shibika.com')
+    meta(property='og:site_name', content='Shibika')
+    meta(property='og:type', content='website')
+
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-89861918-3')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-89861918-3');
+
+    link(rel="icon", type="image/png", href="../assets/img/shibika-icon.png")
+    link(rel="stylesheet", href="https://rsms.me/inter/inter.css")
+    link(rel="stylesheet", href="../assets/css/style.css")
+  body
+    +nav
+
+    main.spot
+
+      section.spot-hero.center
+        .container
+          h1.uppercase.white Get Your Art Featured!
+          p.uppercase Boost your digital presence
+
+      section.spot-what.center
+        .container
+          h2 What is Shibika Spotlight?
+          p A Shibika Spotlight gets you a centre-stage with the right audience for your art. A Spotlight is a personalised exclusive page, designed, created and hosted on Shibika that shares your journey and experience as an artist with the world.
+          p In a single digital space, we map your work, your persona and let people know you beyond your art. Using that, you not only get an online profile for yourself, you also reach a wider audience and increase your fanbase.
+
+      section.spot-featured.center
+        .container
+          h2 Our Featured Spotlights
+          .row
+            a.col(href="#!")
+              img(src="../assets/img/spotlight/amita-godbole.jpg", alt="amita godbole")
+            a.col(href="#!")
+              img(src="../assets/img/spotlight/subhrojyoti.jpg", alt="subhrojyoti")
+            a.col(href="#!")
+              img(src="../assets/img/spotlight/saurabh-turakhia.jpg", alt="saurabh turakhia")
+            a.col(href="#!")
+              img(src="../assets/img/spotlight/shalaka-sreeram.jpg", alt="shalaka sreeram")
+          a.button(href="#!") Explore Spotlights
+
+      section.spot-how.center
+        .container
+          h2 How to get a Shibika Spotlight?
+          p Wish to get a Shibika Spotlight for yourself too?
+            br
+            | It&apos;s three simple steps away:
+          .row.center
+            div
+              .spot-how--icon
+                img(src="../assets/img/spotlight/add-user.png", alt="add user")
+              span Sign up on Shibika.
+            div
+              .spot-how--icon
+                img(src="../assets/img/spotlight/resume.png", alt="resume")
+              span Complete your Shibika profile by adding your detailed bio, works, offerings, events, etc.
+            div
+              .spot-how--icon
+                img(src="../assets/img/spotlight/test.png", alt="test")
+              span Answer a quick questionnaire to help us know you better and share relevant resources.
+          p.spot-how--all That’s all we’d need from you to build your Spotlight.
+          p
+            small
+              em Be rest assured, we’d keep you in the loop at each step as we progress towards preparing your digital footprint.
+                  br
+                  | Content and designs would be executed only post your approval.
+
+      section.spot-pricing.center
+        .container
+          h2 Our Pricing
+          .row
+            .col
+              h3
+                em Basic
+              p We create a Spotlight webpage for you, host it on our website and share it on our social media.
+              .cost.white ₹2000
+            .col
+              h3
+                em Premium
+              p We create a Spotlight webpage for you, host it on our website and share it on our social media.
+                br
+                | +
+                br
+                | We run a dedicated social media promotion for your profile and increase your reach and exposure.
+              .cost.white ₹5000
+
+      section.spot-contact.center
+        .container
+          h2.white Talk To Us
+          p.white Interested in getting your own artist page? Let us create a customised Spotlight for you too.
+          a.button(href="#!") Contact Us
+
+    +footer(true)
