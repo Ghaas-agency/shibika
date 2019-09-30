@@ -66,7 +66,7 @@ html(lang="en")
               img(src="../assets/img/spotlight/saurabh-turakhia.jpg", alt="saurabh turakhia")
             a.col(href="#!")
               img(src="../assets/img/spotlight/shalaka-sreeram.jpg", alt="shalaka sreeram")
-          a.button(href="#!") Explore Spotlights
+          a.button(href="../spotlight-archive/") Explore Spotlights
 
       section.spot-how.center
         .container
@@ -117,6 +117,20 @@ html(lang="en")
         .container
           h2.white Talk To Us
           p.white Interested in getting your own artist page? Let us create a customised Spotlight for you too.
-          a.button(href="#!") Contact Us
+          a.button(href="https://m.me/ishibika", target="_blank", rel="noopener noreferrer") Contact Us
 
     +footer(true)
+
+    #fb-root
+    script.
+      window.fbAsyncInit = function() {
+        FB.init({ xfbml: true, version: 'v4.0' });
+      };
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    .fb-customerchat(attribution="setup_tool" page_id="2064915700413357" theme_color="#e0300e" logged_in_greeting="Hi! Would you like to create a Spotlight Page for yourself?" logged_out_greeting="Hi! Would you like to create a Spotlight Page for yourself?")
