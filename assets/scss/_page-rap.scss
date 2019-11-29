@@ -1,0 +1,93 @@
+.rap {
+  .poetry-hero {
+    background-image: url('../img/rap-competition/rap-bg.jpg');
+    background-color: rgba(0,0,0,0.5);
+    background-position: center;
+    background-blend-mode: overlay;
+    min-height: calc(100vh - 55px);
+    height: calc(100vh - 55px);
+    padding: 0;
+    
+    @media only screen and (max-width: 767px) {
+      height: auto;
+      padding-top: 50px;
+    }
+
+    .container {
+      height: 80%;
+      
+      .row {
+        height: 100%;
+        align-items: flex-end;
+        
+        @media only screen and (max-width: 767px) {
+          align-items: center;
+          text-align: center;
+        }
+
+        & > .col {
+          &:first-child {
+            p {
+              font-size: 1.5em;
+              margin-top: -10px;
+              letter-spacing: 4px;
+              
+              @media only screen and (max-width: 480px) {
+                font-size: 1.2em;
+              }
+            }
+          }
+
+          &:last-child {
+            padding-bottom: 32px;
+
+            p {
+              font-size: 1.4em;
+            }
+          }
+        }
+      }
+    }
+
+    .rap-verse {
+      width: 600px;
+      max-width: 100%;
+
+      @media only screen and (max-width: 767px) {
+        width: 60vw;
+      }
+
+      @media only screen and (max-width: 480px) {
+        width: 80vw;
+      }
+    }
+
+    &__wrapper {
+      max-width: 500px;
+    }
+
+    &__buttons {
+      .button {
+        font-size: 1.2em;
+        
+        @media only screen and (max-width: 480px) {
+          font-size: 1em;
+          margin-bottom: 15px;
+        }
+
+        @media only screen and (max-width: 380px) {
+          margin-left: 0 !important;
+        }
+      }
+
+      .button-outline {
+        color: $f;
+        border-color: $f;
+
+        &:hover {
+          border-color: $red;
+        }
+      }
+    }
+  }
+}
